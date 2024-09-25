@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StiFluQz Keymap</title>
+  <style>
+    html { background-color: #fefecc; color: #100500; }
+    @media (prefers-color-scheme: dark) {
+      html { background-color: #111111; color: #fbfbfb; }
+      a { color: #ca8465; }
+    }
+    body {
+      line-height: 1.6;
+      font-family: system-ui, Roboto, Helvetica, Verdana, Arial, sans-serif;
+      text-align: left;
+      margin: 10px;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+    }
+    img.u-photo { border-radius: 50%; }
+    ul { padding: 2px; list-style: default; }
+    dt { font-weight: bold; }
+  </style>
+</head>
+
+<body>
+
+  <h1>
+    StiFluQz Keymap
+  </h1>
+
+  <img width="1084" height="788" alt="StiFluQz keymap" src="stifluqz.png" />
+
+  <p>
+    StiFluQz, pronounced /ˈstIflukwIz/ 
+    (<a href="https://www.internationalphoneticalphabet.org/ipa-sounds/ipa-chart-with-sounds/#ipachartstart">IPA</a>),
+    is named for the main keys on the 
+    alphabetic layers (<code>sti</code>, <code>flu</code>, <code>qz</code>). 
+    If a cooler name arises, I may change it.
+  </p>
+    
+  <p>
+    This is my personal left-handed keymap for half of a 
+    <a href="https://www.boardsource.xyz/store/5f2e7e4a2902de7151494f92">
+      Microdox keyboard
+    </a>. I use it primarily with my OS layout set to QWERTY US English or 
+    QWERTY US International.
+    My primary goal is to achieve left-handed typing so that the right 
+    hand can remain occupied with a pointing device, especially a mouse pen.
+    It is annoying to set a mouse pen down and pick it up again. Specific 
+    design goals, mostly related to ergonomics, include:
+  </p>
+
+  <dl>
+    <dt>Compactness</dt> 
+    <dd>
+      I want to reduce movement of my typing hand. 3x5+3 feels like the 
+      largest layout that lets my wrist remain nearly still.
+    </dd>
+
+    <dt>Pinky stillness</dt>
+    <dd>
+      Most of my repetitive-motion strain problems are 
+      related to my pinkies. To eliminate horizontal travel, I have assigned 
+      only one column to the pinky. I have found that holding modifiers does 
+      not hurt as much as character typing; therefore only modifiers 
+      are assigned to the pinky.
+    </dd>
+
+    <dt>Avoid vertical combos</dt>
+    <dd>
+      I have learned from experience that vertical combos (ie. pressing
+      more than one key in the same column) is uncomfortable for me. 
+      Therefore, I avoid it. The main exception to this rule is the pinky 
+      column. I find it sufficiently comfortable to hold two or three keys
+      simultaneously with my pinky. <code>LCtrl+LAlt</code>, 
+      <code>LShft+LCtrl</code>, and <code>LShft+LCtrl+LAlt</code> are all
+      acceptable. The one challenge is <code>LShft+LAlt</code>; this does
+      require the use of an additional finger. Fortunately, this 
+      combination is rare in my experience.
+    </dd>
+
+    <dt>Optimizing for letter frequency</dt>
+    <dd>
+      This goal is not as rigorous for me
+      as for many designers, because although I primarily type English prose,
+      I do often type in various other human languages and programming 
+      languages. Like many designers, I used 
+      <a href="https://en.wikipedia.org/wiki/Etaoin_shrdlu">"ETAOIN SHRDLU"</a>
+      as a starting point, but I raised the priority of some characters that 
+      appear more often in the code I write, e.g. <code>x</code> and 
+      <code>y</code>.
+    </dd>
+
+    <dt>Combos over sequences</dt>
+    <dd>
+      The majority of characters require at least two
+      fingers to type. Many require four. Including modifiers, some may 
+      require five or more (e.g. <code>Ctrl+Alt+$</code>).
+      Only one keycode is assigned to a one-shot: <code>LGUI</code>. 
+      This modifier is common enough that I cannot leave it out, but not 
+      so common that I need it to occupy a permanent place on the board.
+    </dd>
+
+    <dt>Consistency</dt>
+    <dd>
+      The use of multiple layers and many combos raises the
+      cognitive load above using a larger, single-layer layout.
+      To avoid making it even more difficult, I make some keys consistent 
+      across multiple or even all layers. The pinky modifiers 
+      (<code>LAlt, LCtrl, LShft</code>) are almost entirely consistent across
+      all layers. (The one exception is on the Numpad layer, where 
+      <code>LCtrl</code> becomes <code>RShft</code> to facilitate text 
+      selection when <code>NumLock</code> is on.)
+      As a lesser example, <code>Spc</code> and <code>Ret</code> are 
+      consistent across the alphabetic layers.
+    </dd>
+  </dl>
+
+  <h2>Reasonable Questions</h2>
+
+  <p>
+    Even after taking the above into account, there are many reasonable 
+    questions that keyboard aficionados might ask about StiFluQz.
+  </p>
+
+  <dl>
+    <dt>Why not an even smaller keyboard like ARTSEY?</dt>
+    <dd>
+      I had considered ARTSEY and similar keymaps, but due to their
+      extreme compactness, they all require vertical combos. Moreover,
+      they tend to rely on autoshift and autocomplete, which does not 
+      work well when I am typing something other than English prose.
+    </dd>
+
+    <dt>Why not ASETNIOP?</dt>
+    <dd>
+      ASETNIOP shares some problems with ARTSEY, but more basically,
+      it requires two hands.
+    </dd>
+
+    <dt>Why the Microdox in particular?</dt>
+    <dd>
+      I started planning by sketching what I thought would be ideal. I then
+      looked around the internet to see what others were working on in the 
+      area of small ergonomic keyboards. I soon discovered 
+      <a href="https://ergogen.xyz">Ergogen</a>, which I used to refine my 
+      ideas further. Ergogen also led me to the 
+      <a href="https://zealot.hu/absolem/">Absolem</a> keyboard, which I 
+      considered trying, but then I found the 
+      <a href="https://www.boardsource.xyz/store/5f2e7e4a2902de7151494f92">Microdox</a>
+      and decided that I liked its compactness. Not only is the Microdox 
+      smaller than the Absolem, it also groups the thumb keys closer, which
+      makes it easier to press two at a time. This gives me two more layers.
+    </dd>
+
+    <dt>What about the other half of the Microdox?</dt>
+    <dd>
+      For my purposes, I don't need the right half. However, as you can see 
+      in my <code>keymap.c</code> file, I programmed it to mirror the left half.
+      This means that with both halves, alternating typing is possible, like 
+      with <a href="https://inkeys.wiki/en/keymaps/taipo">Taipo</a>.
+      If I wanted to use the right side without mirroring, I would probably 
+      turn it into a macropad. (For now, it remains unbuilt.)
+    </dd>
+
+
+  </dl>
+
+  <a href="https://github.com/sennomo/qmk_firmware/tree/master/keyboards/boardsource/microdox/keymaps/sennomo">
+    On Github
+  </a>
+</body>
+</html>
